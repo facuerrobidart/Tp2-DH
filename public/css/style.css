@@ -1,7 +1,21 @@
 .disclaimer{
     text-align: center;
 }
-
+.copy{
+    color: gray;
+    font-style: italic;
+}
 body{
-    font-family: Roboto,Arial, Helvetica, sans-serif;
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: yellow;
+}
+#logo{
+    height: 5vw;
+    width: 7.5vw;
+}
+header h5{
+    display:inline;
+    margin:0.5vw;
 }
