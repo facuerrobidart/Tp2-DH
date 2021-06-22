@@ -13,30 +13,35 @@ html, body{
     border-top: 1px;
 
 }
+section{
+    background-color: #ebebeb;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 header{
     background-color: yellow;
 }
 .articulo div{
     align-items: center;
     align-content: center;
+    text-align: center;
     padding: 15px;
-    display: inline-block;
-}
-.articulo h3{
-    text-align: left;
-}
-.articulo h4{
-    text-align: left;
-}
-.articulo p{
-    text-align: left;
+    background-color: white;
+    align-self: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 5%;
 }
 .titulo{
     text-align: center;
     font-size: 24px;
 }
+
 .articulo p{
     font-size: 12px;
+}
+.articulo h3{
+    display: none;
 }
 .articulo h4{
     font-size: 18px;
@@ -45,11 +50,32 @@ header{
     font-size:16px;
 }
 #logo{
-    height: 5vw;
-    width: 7.5vw;
+    height: 10vw;
+    width: 15vw;
 }
 header h5{
-    display:inline;
-    margin:0.5vw;
+    margin-left:2%;
     font-size:16px;
+}
+footer{
+    background-color: lightgray;
+    padding-top: 10px;
+}
+
+@media (min-width:769px){
+    .articulo h3{
+        display: block;
+    }
+    .articulo div{
+        display: inline-block;
+        height:30vw;
+        width:30vw;
+    }
+    .titulo{
+        text-align: left;
+        margin-left:2%;
+    }
+    header h5{
+        display: inline-block;
+    }
 }
