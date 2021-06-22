@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .disclaimer{
     text-align: center;
 }
@@ -5,11 +8,41 @@
     color: gray;
     font-style: italic;
 }
-body{
+html, body{
     font-family: 'Roboto',Arial, Helvetica, sans-serif;
+    border-top: 1px;
+
 }
 header{
     background-color: yellow;
+}
+.articulo div{
+    align-items: center;
+    align-content: center;
+    padding: 15px;
+    display: inline-block;
+}
+.articulo h3{
+    text-align: left;
+}
+.articulo h4{
+    text-align: left;
+}
+.articulo p{
+    text-align: left;
+}
+.titulo{
+    text-align: center;
+    font-size: 24px;
+}
+.articulo p{
+    font-size: 12px;
+}
+.articulo h4{
+    font-size: 18px;
+}
+.articulo h5{
+    font-size:16px;
 }
 #logo{
     height: 5vw;
@@ -18,4 +51,5 @@ header{
 header h5{
     display:inline;
     margin:0.5vw;
+    font-size:16px;
 }
