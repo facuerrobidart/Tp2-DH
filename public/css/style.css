@@ -4,6 +4,9 @@
 .disclaimer{
     text-align: center;
 }
+.banner{
+    width: 100%;
+}
 .copy{
     color: gray;
     font-style: italic;
@@ -73,8 +76,9 @@ header{
     font-weight: bold;
 }
 #logo{
-    height: 10vw;
-    width: 15vw;
+    height: 5%;
+    width: 7.5%;
+    margin-left: 2%;
 }
 header h5{
     margin-left:2%;
@@ -86,11 +90,54 @@ footer{
     background-color: lightgray;
     padding-top: 10px;
 }
+/* Style the navigation menu */
+.topnav {
+    padding-top:2%;
+    overflow: hidden;
+    background-color: yellow;
+    position: relative;
+}
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+}
+  
+  /* Style navigation menu links */
+.topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+  
+  /* Style the hamburger menu */
+.topnav a.icon {
+    background: yellow;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color:black;
+    margin-top:1%;
+}
+  
+  /* Add a grey background color on mouse-over */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+  /* Style the active link (or home/logo) */
+.active {
+    background-color: #04AA6D;
+    color: white;
+}
 
 @media (min-width:769px){
     .articulo div{
         width: 25%;
-        height: auto;
         margin-left: 2%;
         margin-right: 2%;
         display: inline-block;

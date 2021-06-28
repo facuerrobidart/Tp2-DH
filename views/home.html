@@ -12,15 +12,42 @@
     <!--BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!--VIEWPORT-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="/public/img/logo-mercado-liebre.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
+    <div class="topnav">
         <img src="https://download.logo.wine/logo/MercadoLibre/MercadoLibre-Logo.wine.png" id="logo"/>
         <input/>
         <button><i class="fas fa-search"></i></button>
         <h5>Compra en cuotas y sin tarjeta</h5>
+        <!-- Opciones de la navbar, con un poquito de ayuda de internet -->
+        <div id="myLinks">
+            <a>Ofertas</a>
+            <a>Tiendas Oficiales</a>
+            <a>Vender</a>
+            <a>Ayuda</a>
+            <a>Crea tu cuenta <i class="fa fa-id-card" aria-hidden="true"></i></a>
+            <a>Ingresá <i class="fas fa-sign-in-alt"></i></a>
+            <a>Mis compras <i class="fas fa-shopping-basket"></i></a>
+        </div>
+        <!-- Menu hamburguesa! tiene un toque de js wink wink -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+        </script>
+    </div>
     </header>
     <img class="banner"src="/img/img-home-banner.jpg"/>
     <h2 class="titulo">Basado en tu última visita</h2>
