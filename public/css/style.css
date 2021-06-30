@@ -51,6 +51,7 @@ header{
     color:green;
     display: inline-block;
 }
+
 .titulo{
     text-align: center;
     font-size: 24px;
@@ -70,6 +71,7 @@ header{
     display: inline-block;
     margin-left: 2%;
 }
+
 .articulo h5{
     font-size:16px;
     color:green;
@@ -111,11 +113,12 @@ footer{
     font-size: 17px;
     display: block;
 }
-  
+
+
   /* Style the hamburger menu */
 .topnav a.icon {
-    background: yellow;
-    display: block;
+    background: rgba(0, 0, 0, 0);
+    display: inline-block;
     position: absolute;
     right: 0;
     top: 0;
