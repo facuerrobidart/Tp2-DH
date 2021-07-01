@@ -20,17 +20,26 @@
     <header>
     <div class="topnav">
         <img src="https://download.logo.wine/logo/MercadoLibre/MercadoLibre-Logo.wine.png" id="logo"/>
-        <div class="input-group d-inline-block w-50 pl-3">
-            <div class="form-outline">
-              <input type="search" id="form1" class="form-control" placeholder="Busca productos, marcas y más" />
-            </div>
+        <div class="busqueda">
+            <div class="input-group d-inline-block w-75">
+                <div class="form-outline">
+                <input type="search" id="form1" class="form-control" placeholder="Busca productos, marcas y más" />
+                </div>  
         </div>
         <button type="button" class="btn btn-primary">
             <i class="fas fa-search"></i>
         </button>
+        </div>
+        <h5 class="compra"><i class="fas fa-hand-holding-usd"></i>Compra en cuotas y sin tarjeta</h5>
         <br>
-        <h5>Compra en cuotas y sin tarjeta</h5>
-        <!-- Opciones de la navbar, con un poquito de ayuda de internet -->
+        <div class="menuPC">
+            <a class="linksIzq" href="productos.html">Todos los productos</a>
+            <a class="linksIzq" href="ofertas.html">Ofertas</a>
+            <a class="linksIzq" href="tiendasof.html">Tiendas Oficiales</a>
+            <a class="linksIzq" href="vender.html">Vender</a>
+            <a class="linksIzq" href="ayuda.html">Ayuda</a>
+        </div>
+        <!-- Opciones de la navbar en el menu hamburguesa, con un poquito de ayuda de internet -->
         <div id="myLinks">
             <a>Ofertas</a>
             <a>Tiendas Oficiales</a>
@@ -41,9 +50,11 @@
             <a>Mis compras <i class="fas fa-shopping-basket"></i></a>
         </div>
         <!-- Menu hamburguesa! tiene un toque de js wink wink -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
+        <div class="hamburguesa">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
         <script>
             function myFunction() {
               var x = document.getElementById("myLinks");
@@ -59,14 +70,14 @@
     <img class="banner"src="/img/img-home-banner.jpg"/>
     <h2 class="titulo">Basado en tu última visita</h2>
     <section class="articulo" id="container">
-       <div>
+       <div class="columna">
             <div id="caja"><img src="https://i.blogs.es/67b0e2/analisis-macbook-pro-13-2020-applesfera-06/450_1000.jpg"/></div>
             <h3>MacBook pro</h3>
             <i class="fas fa-shipping-fast"></i><h4>Precio</h4>
             <h5>%off</h5>
             <p>Lorem Impsum bla bla bla</p>
        </div>
-       <div>
+       <div class="columna">
             <div id="caja"><img src="https://i1.wp.com/hipertextual.com/wp-content/uploads/2021/01/Galaxy-s21-Series-scaled.jpg?fit=1200%2C788&ssl=1"/></div>
             <h3>Samsung S21 ultra</h3>
             <i class="fas fa-shipping-fast"></i><h4>Precio</h4>
@@ -76,15 +87,15 @@
    </section>
    <h2 class="titulo">Sección de ofertas</h2>
    <section class="articulo" id="container">
-       <div>
+       <div class="columna">
             <div id="caja"><img src="https://i.blogs.es/6af018/google-pixel-5-00/1366_2000.jpg"/></div>
             <h3>Google Pixel 5</h3>
             <i class="fas fa-shipping-fast"></i><h4>Precio</h4>
             <h5>%off</h5>
             <p>Lorem impsum bla bla bla</p>
        </div>
-       <div>
-            <div id="caja"><img src="https://www.casanissei.com/media/catalog/product/cache/16a9529cefd63504739dab4fc3414065/i/p/iphone-12-pro_azuul_2_1_3_1.jpg"/></div>
+       <div class="columna">
+            <div id="caja"><img src="https://www.apple.com/newsroom/images/product/availability/geo/Apple_iphone12mini-iphone12max-homepodmini-availability_iphone12mini-geo_110520_inline.jpg.large.jpg"/></div>
             <h3>IPhone 12</h3>
             <i class="fas fa-shipping-fast"></i><h4>Precio</h4>
             <h5>%off</h5>
@@ -92,23 +103,25 @@
         </div>
    </section>
    <footer>
-        <div class="disclaimer">
-            <i class="fas fa-credit-card fa-3x"></i>
-            <h3>Pagá con tarjeta o efectivo</h3>
-            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</li>
-            </p>
-        </div>
-        <div class="disclaimer">
-            <i class="fas fa-gift fa-3x"></i>
-            <h3>Envío gratis desde $ 2.500</h3>
-            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</li>
-            </p>    
-        </div>
-        <div class="disclaimer">
-            <i class="fas fa-user-shield fa-3x"></i>
-            <h3>Seguridad, de principio a fin</h3>
-            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</li>
-            </p>
+        <div class="contieneDisclaimer">
+            <div class="disclaimer">
+                <i class="fas fa-credit-card fa-3x"></i>
+                <h3>Pagá con tarjeta o efectivo</h3>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</li>
+                </p>
+            </div>
+            <div class="disclaimer">
+                <i class="fas fa-gift fa-3x"></i>
+                <h3>Envío gratis desde $ 2.500</h3>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</li>
+                </p>    
+            </div>
+            <div class="disclaimer">
+                <i class="fas fa-user-shield fa-3x"></i>
+                <h3>Seguridad, de principio a fin</h3>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</li>
+                </p>
+            </div>
         </div>
         <div class="copy"><p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p></div>
     </footer>

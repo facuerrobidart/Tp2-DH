@@ -16,7 +16,7 @@ html, body{
     border-top: 1px;
 
 }
-section{
+section.articulo{
     background-color: #ebebeb;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -33,6 +33,7 @@ header{
     margin-right: 3%;
     margin-bottom: 3%;
     background-color: white;
+    height:max-content;
 }
 #caja{
     width: 60%;
@@ -137,13 +138,37 @@ footer{
     background-color: #04AA6D;
     color: white;
 }
+div.menuPC{
+    display:none
+}
+
+div.busqueda{
+    display: inline-block;
+    width: 75%;
+    text-align: center;
+}
+
+div.contieneDisclaimer{
+    padding:2%;
+}
+.disclaimer i:hover{
+    color:blue;
+}
+h5.compra:hover{
+    color:blue;
+}
+
 
 @media (min-width:769px){
     .articulo div{
         width: 25%;
         margin-left: 2%;
         margin-right: 2%;
-        display: inline-block;
+        height: 100%;
+
+    }
+    div.busqueda{
+        width: 50%;
     }
     .articulo h3{
         display: block;
@@ -154,5 +179,29 @@ footer{
     }
     header h5{
         display: inline-block;
+    }
+    div.disclaimer{
+        display: inline-block;
+        width:30%;
+        align-self: center;
+    }
+    div.contieneDisclaimer{
+        text-align: center;
+    }
+    .hamburguesa{
+        display: none;
+    }
+    h2.titulo{
+        padding-bottom:1%;
+    }
+    section.articulo{
+        display: flex;
+        height: max-content;
+    }
+    div.menuPC{
+        display:flex;
+    }
+    .linksIzq{
+        margin-left:1%;
     }
 }
