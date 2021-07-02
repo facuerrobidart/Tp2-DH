@@ -203,6 +203,13 @@ button.botonLogin:hover{
 h2.bienvenido{
     padding: 3%;
 }
+div.containerRegistro{
+    display:flex;
+    justify-content: center;
+}
+.containerRegistro form{
+    padding: 3%;
+}
 @media (min-width:769px){
     .articulo div{
         width: 25%;
@@ -264,5 +271,9 @@ h2.bienvenido{
         padding-left: 2%;
         padding-top: 2%;
         padding-bottom: 1%;
+    }
+    .containerRegistro form{
+        width: 75%;
+        padding-bottom: 2%;
     }
 }

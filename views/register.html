@@ -71,6 +71,124 @@
     </div>
     </header>
     <main class="login">
+        <h2 class="bienvenido">Registrate para ser parte de MercadoLiebre</h5>
+        <div class="containerRegistro">
+            <form>
+            <div class="col-lg-12 well">
+            <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label for="nombre">Nombre y Apellido</label>
+                                <input type="text" placeholder="Ej: Cosme Fulanito" name="nombre" class="form-control" required>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="Ingresá tu email acá" name="email" class="form-control" required>
+                            </div>
+                        </div>					
+                        <div class="row">
+                            <div class="col-sm-4 form-group">
+                                <label for="user">Usuario</label>
+                                <input type="text" placeholder="Ej: cosme123" name="user" class="form-control" required>
+                            </div>	
+                            <div class="col-sm-4 form-group">
+                                <label for="contraseña">Contraseña</label>
+                                <input type="password" placeholder="Ingresá tu contraseña" name="contraseña" class="form-control" required>
+                            </div>	
+                            <div class="col-sm-4 form-group">
+                                <label for="repetirContraseña">Confirmar Contraseña</label>
+                                <input type="password" placeholder="Repetí la contraseña" name="repetirContraseña" class="form-control" required>
+                            </div>		
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 form-group">
+                                <label for="direccion">Direccion</label>
+                                <input type="text" placeholder="Ej: Calle falsa 123" name="direccion" class="form-control" required>
+                            </div>		
+                            <div class="col-sm-4 form-group">
+                                <label for="ciudad">Ciudad/Localidad</label>
+                                <input type="text" placeholder="Ej: Shelbyville" name="ciudad" class="form-control" required>
+                            </div>
+                            <div class="col-sm-4 form-group">
+                                <label for="cp">Código Postal</label>
+                                <input type="text" name="cp" class="form-control">
+                            </div>	
+                        </div>						
+                    <div class="row">
+                        <div class="col-sm-4 form-group">
+                            <label for="fechaNacimiento">Fecha de nacimiento</label>
+                            <input type="date" name="fechaNacimiento" class="form-control" required>
+                        </div>		
+                        <div class="col-sm-6 form-group">
+                            <label>Elegí tu tipo de perfil</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="perfil" id="comprador">
+                                <label class="form-check-label" for="comprador">
+                                  Comprador
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="perfil" id="vendedor" checked>
+                                <label class="form-check-label" for="vendedor">
+                                  Vendedor
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <label>Intereses</label>
+                    <div class="row">
+                        <div class="col-sm-4 form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" name="intereses" type="checkbox" value="electro" id="electro">
+                                <label class="form-check-label" for="electro">
+                                  Electro
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" name="intereses" type="checkbox" value="moda" id="moda">
+                                <label class="form-check-label" for="moda">
+                                  Moda
+                                </label>
+                              </div>
+                        </div>
+                        <div class="col-sm-4 form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" name="intereses" type="checkbox" value="hogar" id="hogar">
+                                <label class="form-check-label" for="hogar">
+                                  Hogar
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" name="intereses" type="checkbox" value="jugueteria" id="jugueteria">
+                                <label class="form-check-label" for="jugueteria">
+                                  Juguetería
+                                </label>
+                              </div>
+                        </div>
+                        <div class="col-sm-4 form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" name="intereses" type="checkbox" value="vidaSana" id="vidaSana">
+                                <label class="form-check-label" for="vidaSana">
+                                  Vida sana
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" name="intereses" type="checkbox" value="videojuegos" id="videojuegos">
+                                <label class="form-check-label" for="videojuegos">
+                                  Videojuegos
+                                </label>
+                              </div>
+                        </div>
+                    </div>	
+                    <br>
+                    <button type="submit" class="btn btn-lg btn-info botonLogin">Registrarse</button>
+                    <button type="reset" class="btn btn-lg btn-info">Volver a empezar</button>					
+                    </div>
+                </div>
+            </div>
+            </form> 
+        </div>
     </main>
     <footer>
         <div class="contieneDisclaimer">
