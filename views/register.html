@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>MercadoLiebre</title>
+    <!--ICONOS-->
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://kit.fontawesome.com/c51793de38.js" crossorigin="anonymous"></script>
+    <!--FUENTES-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!--VIEWPORT-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/public/img/logo-mercado-liebre.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+    <div class="topnav">
+        <img src="https://download.logo.wine/logo/MercadoLibre/MercadoLibre-Logo.wine.png" id="logo"/>
+        <form class="busqueda">
+                <div class="input-group d-inline-block w-75">
+                    <div class="form-outline">
+                    <input type="search" id="form1" class="form-control" placeholder="Busca productos, marcas y más" />
+                    </div>  
+            </div>
+            <button type="submit" class="btn btn-primary">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+        <h5 class="compra"><i class="fas fa-hand-holding-usd"></i>Compra en cuotas y sin tarjeta</h5>
+        <br>
+        <div class="menuPC">
+            <a class="linksIzq" href="productos.html">Todos los productos</a>
+            <a class="linksIzq" href="ofertas.html">Ofertas</a>
+            <a class="linksIzq" href="tiendasof.html">Tiendas Oficiales</a>
+            <a class="linksIzq" href="vender.html">Vender</a>
+            <a class="linksIzq" href="ayuda.html">Ayuda</a>
+            <a href="register.html" class="linksDer">Crea tu cuenta <i class="fa fa-id-card" aria-hidden="true"></i></a>
+            <a href="login.html">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+            <a>Mis compras <i class="fas fa-shopping-basket"></i></a>
+        </div>
+        <!-- Opciones de la navbar en el menu hamburguesa, con un poquito de ayuda de internet -->
+        <div id="myLinks">
+            <a>Ofertas</a>
+            <a>Tiendas Oficiales</a>
+            <a>Vender</a>
+            <a>Ayuda</a>
+            <a href="register.html">Crea tu cuenta <i class="fa fa-id-card" aria-hidden="true"></i></a>
+            <a href="login.html">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+            <a>Mis compras <i class="fas fa-shopping-basket"></i></a>
+        </div>
+        <!-- Menu hamburguesa! tiene un toque de js wink wink -->
+        <div class="hamburguesa">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+        </script>
+    </div>
+    </header>
+    <main class="login">
+    </main>
+    <footer>
+        <div class="contieneDisclaimer">
+            <div class="disclaimer">
+                <i class="fas fa-credit-card fa-3x"></i>
+                <h3>Pagá con tarjeta o efectivo</h3>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</li>
+                </p>
+            </div>
+            <div class="disclaimer">
+                <i class="fas fa-gift fa-3x"></i>
+                <h3>Envío gratis desde $ 2.500</h3>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</li>
+                </p>    
+            </div>
+            <div class="disclaimer">
+                <i class="fas fa-user-shield fa-3x"></i>
+                <h3>Seguridad, de principio a fin</h3>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</li>
+                </p>
+            </div>
+        </div>
+        <div class="copy"><p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p></div>
+    </footer>
+</body>
+
+</html>
