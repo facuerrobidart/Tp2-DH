@@ -21,10 +21,10 @@
     <div class="topnav">
         <img src="https://download.logo.wine/logo/MercadoLibre/MercadoLibre-Logo.wine.png" id="logo"/>
         <form class="busqueda">
-            <div class="input-group d-inline-block w-75">
-                <div class="form-outline">
-                <input type="search" id="form1" class="form-control" placeholder="Busca productos, marcas y más" />
-                </div>  
+                <div class="input-group d-inline-block w-75">
+                    <div class="form-outline">
+                    <input type="search" id="form1" class="form-control" placeholder="Busca productos, marcas y más" />
+                    </div>  
             </div>
             <button type="submit" class="btn btn-primary">
                 <i class="fas fa-search"></i>
@@ -39,7 +39,7 @@
             <a class="linksIzq" href="vender.html">Vender</a>
             <a class="linksIzq" href="ayuda.html">Ayuda</a>
             <a class="linksDer">Crea tu cuenta <i class="fa fa-id-card" aria-hidden="true"></i></a>
-            <a href="login.html">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+            <a>Ingresá <i class="fas fa-sign-in-alt"></i></a>
             <a>Mis compras <i class="fas fa-shopping-basket"></i></a>
         </div>
         <!-- Opciones de la navbar en el menu hamburguesa, con un poquito de ayuda de internet -->
@@ -49,7 +49,7 @@
             <a>Vender</a>
             <a>Ayuda</a>
             <a>Crea tu cuenta <i class="fa fa-id-card" aria-hidden="true"></i></a>
-            <a href="login.html">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+            <a>Ingresá <i class="fas fa-sign-in-alt"></i></a>
             <a>Mis compras <i class="fas fa-shopping-basket"></i></a>
         </div>
         <!-- Menu hamburguesa! tiene un toque de js wink wink -->
@@ -70,44 +70,29 @@
         </script>
     </div>
     </header>
-    <main>
-    <img class="banner"src="/img/img-home-banner.jpg"/>
-    <h2 class="titulo">Basado en tu última visita</h2>
-    <section class="articulo" id="container">
-       <div class="columna">
-            <div id="caja"><img src="https://i.blogs.es/67b0e2/analisis-macbook-pro-13-2020-applesfera-06/450_1000.jpg"/></div>
-            <h3>MacBook pro</h3>
-            <i class="fas fa-shipping-fast"></i><h4>Precio</h4>
-            <h5>%off</h5>
-            <p class="descripcion">Lorem Impsum bla bla bla</p>
-       </div>
-       <div class="columna">
-            <div id="caja"><img src="https://i1.wp.com/hipertextual.com/wp-content/uploads/2021/01/Galaxy-s21-Series-scaled.jpg?fit=1200%2C788&ssl=1"/></div>
-            <h3>Samsung S21 ultra</h3>
-            <i class="fas fa-shipping-fast"></i><h4>Precio</h4>
-            <h5>%off</h5>
-            <p class="descripcion">Lorem ipsum bla bla bla</p>
-       </div>
-   </section>
-   <h2 class="titulo">Sección de ofertas</h2>
-   <section class="articulo" id="container">
-       <div class="columna">
-            <div id="caja"><img src="https://i.blogs.es/6af018/google-pixel-5-00/1366_2000.jpg"/></div>
-            <h3>Google Pixel 5</h3>
-            <i class="fas fa-shipping-fast"></i><h4>Precio</h4>
-            <h5>%off</h5>
-            <p>Lorem impsum bla bla bla</p>
-       </div>
-       <div class="columna">
-            <div id="caja"><img src="https://www.apple.com/newsroom/images/product/availability/geo/Apple_iphone12mini-iphone12max-homepodmini-availability_iphone12mini-geo_110520_inline.jpg.large.jpg"/></div>
-            <h3>IPhone 12</h3>
-            <i class="fas fa-shipping-fast"></i><h4>Precio</h4>
-            <h5>%off</h5>
-            <p>Lorem impsum bla bla bla</p>
+    <main class="login">
+        <h2 class="bienvenido">Bienvenido de vuelta a MercadoLiebre</h2>
+        <div class="containerLogin">
+                <form class="login">
+                    <div class="form-group">
+                        <label for="user">Usuario</label>
+                        <input type="email" class="form-control" id="user" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contraseña">Contraseña</label>
+                        <input type="password" class="form-control" name="contraseña" required>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="Recordame">
+                        <label class="form-check-label" for="Recordame">Recordame</label>
+                    </div>
+                    <a href="">¿Olvidaste tu contraseña?</a>
+                    <br>
+                    <button type="submit" class="btn btn-primary botonLogin">Entrar</button>
+                </form>
         </div>
-   </section>
-   </main>
-   <footer>
+    </main>
+    <footer>
         <div class="contieneDisclaimer">
             <div class="disclaimer">
                 <i class="fas fa-credit-card fa-3x"></i>
